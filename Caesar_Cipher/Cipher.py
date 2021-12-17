@@ -1,11 +1,10 @@
 # Caesar Cipher v1
 # Author Brandon Zazza
 
-"""
+""" Hard Coded Dictionary
 letter_dict = {1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"j",10:"k",11:"l",12:"m",
 13:"n",14:"o",15:"p",16:"q",17:"r",18:"s",19:"t",20:"u",21:"v",22:"w",23:"x",24:"y",25:"z"}
 """
-
 
 def dictionary_gen(letter_list):
     dict_return = {}
@@ -33,7 +32,6 @@ def GetKey(val):
     for key, value in letter_dict.items():
         if val == value:
             return(key)
-
 
 
 #driver code
