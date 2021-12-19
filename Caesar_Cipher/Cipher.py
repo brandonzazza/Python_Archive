@@ -33,11 +33,13 @@ def GetKey(val):
         if val == value:
             return(key)
 
-
-#driver code
-
 letter_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 letter_dict = dictionary_gen(letter_list)
 
-message = "ab"
-print(text_change(3,message))
+    
+def main():
+    message = "khoor zruog lwv ph eudqgrq"
+    print(text_change(-3,message))
+
+
+main()
