@@ -8,24 +8,25 @@ def crack_text(cipher):
     words = cipher.split(" ")
     for i in range(len(words)):
         if len(words[i]) == 5:
-            file_read("Caesar_Cipher/flw.txt", words[i])
+            file_read("fiv_lw.txt", words[i])
+        elif len(words[i]) == 4:
+            file_read("fur_lw.txt", words[i])
         else:
             print("Not Found")
 
 def file_read(filename, ciph_word):
     with open(filename) as csv_file:
         csv_reader = csv.reader(csv_file)
-        for i in range(len(Ci.letter_list)):
-            print(i)
-            check = Ci.text_change(i, ciph_word)
-            for record in csv_reader:
+        for record in csv_reader:  
+            for i in range(26):
+                check = Ci.text_change(i, ciph_word)
                 if record[0] == check:
-                    print('Found' , record[0], 'after', i, "permeitations")
-                    return 
-                    
+                    print('Found word' , '"'+record[0]+'"', 'after', i, "permutation")
+                    return
+    print("Error Computing") 
 
 
-crack_text("water")
+crack_text("fdqqe iuxx sdqqz")
 
 
 
