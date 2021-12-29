@@ -38,7 +38,7 @@ def GetKey(val):
 #letter_dict = dictionary_gen(letter_list)
 
 def main():
-    message = "trees will green"
+    message = "trees are green"
     print(text_change(12,message))
 
 if __name__ == "__main__": 
