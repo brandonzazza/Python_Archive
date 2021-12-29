@@ -36,10 +36,9 @@ def GetKey(val):
 letter_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 letter_dict = dictionary_gen(letter_list)
 
-    
 def main():
-    message = "khoor zruog lwv ph eudqgrq"
-    print(text_change(-3,message))
-
-
-main()
+    message = "water"
+    print(text_change(1,message))
+    
+if __name__ == "__main__": 
+    main()
