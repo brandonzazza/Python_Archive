@@ -1,10 +1,10 @@
 # Caesar Cipher v1
 # Author Brandon Zazza
 
-""" Hard Coded Dictionary
-letter_dict = {1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"j",10:"k",11:"l",12:"m",
-13:"n",14:"o",15:"p",16:"q",17:"r",18:"s",19:"t",20:"u",21:"v",22:"w",23:"x",24:"y",25:"z"}
-"""
+#""" Hard Coded Dictionary
+letter_dict = {1:"a",2:"b",3:"c",4:"d",5:"e",6:"f",7:"g",8:"h",9:"i",10:"j",11:"k",12:"l",13:"m",
+14:"n",15:"o",16:"p",17:"q",18:"r",19:"s",20:"t",21:"u",22:"v",23:"w",24:"x",25:"y",26:"z"}
+#"""
 
 def dictionary_gen(letter_list):
     dict_return = {}
@@ -21,6 +21,7 @@ def text_change(n,message):
         if type(key) == type(int()):
             if key + n > len(letter_dict):
                 key = key+n-26
+                output_list.append(letter_dict[key])
             else:
                 key = n+key
                 output_list.append(letter_dict[key])
@@ -33,12 +34,12 @@ def GetKey(val):
         if val == value:
             return(key)
 
-letter_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-letter_dict = dictionary_gen(letter_list)
+#letter_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+#letter_dict = dictionary_gen(letter_list)
 
 def main():
-    message = "water"
-    print(text_change(1,message))
-    
+    message = "pizza"
+    print(text_change(7,message))
+
 if __name__ == "__main__": 
     main()
