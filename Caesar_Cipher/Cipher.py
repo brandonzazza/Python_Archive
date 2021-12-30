@@ -38,8 +38,8 @@ def GetKey(val):
 #letter_dict = dictionary_gen(letter_list)
 
 def main():
-    message = "trees are green"
-    print(text_change(12,message))
+    message = "hello world"
+    print(text_change(16,message))
 
 if __name__ == "__main__": 
     main()
